@@ -48,8 +48,7 @@
         position: relative;
         text-align: center;
         font-family: sans-serif;
-        margin-top: 80px;
-        width: 100%;
+        margin-top: 100px;
       }
 
       .primary-btn {
@@ -111,27 +110,24 @@
       .examples {
         font-size: 18px;
         padding: 30px;
+        width: 50%;
         margin: auto;
         text-align: justify;
         opacity: 0.6;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
       }
 
       .resolutions {
         font-size: 18px;
         padding: 30px;
-        width: 50%;
+        width: fit-content;
         margin: auto;
         text-align: justify;
-        display: flex;
-        justify-content: center;
       }
 
       .addedResolution {
         text-transform: capitalize;
         color: black;
+        text-align: justify;
       }
       
       footer {
@@ -311,7 +307,7 @@
       <div class="confetti-piece"></div>
       <div class="confetti-piece"></div>
       <div class="box">
-        <h2 class="text-center ">Happy New Year</h2>
+        <h2 class="text-center">Happy New Year</h2>
         <h1 class="text-center">Organize your life</h1>
         <h3 class="text-center">Resolutions helps build new habits</h3>
 
@@ -374,9 +370,7 @@
               </div>
 
                 <div class="row">
-                  <div class="col-md-4"></div>
-                  
-                  <div class="col-md-4">
+                  <div class="col-md-12">
                     <ul class="examples resoultions">
                       <li class="listHeading">Examples</li>
                       <li>Excerise more</li>
@@ -385,17 +379,14 @@
                       <li>Solo trips</li>
                     </ul>
                   </div>
-                  <div class="col-md-4"></div>
                 </div>
 
                 <div class="row">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-4">
+                  <div class="col-md-12">
                     <form action="" class="resolutionForm">
                       <input type="text" name="resolution" id="resolution" class="resolution" required placeholder="Enter a resolution...">
                     </form>
                   </div>
-                  <div class="col-md-4"></div>
                   <a class="homepage my-3" href="index.html">Start over</a>
                 </div>
               </div>
