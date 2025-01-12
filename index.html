@@ -49,6 +49,7 @@
         text-align: center;
         font-family: sans-serif;
         margin-top: 120px;
+        width: 100%;
       }
 
       .primary-btn {
@@ -110,10 +111,12 @@
       .examples {
         font-size: 18px;
         padding: 30px;
-        width: 50%;
         margin: auto;
         text-align: justify;
         opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
       }
 
       .resolutions {
@@ -122,6 +125,8 @@
         width: 50%;
         margin: auto;
         text-align: justify;
+        display: flex;
+        justify-content: center;
       }
 
       .addedResolution {
@@ -369,7 +374,9 @@
               </div>
 
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-4"></div>
+                  
+                  <div class="col-md-4">
                     <ul class="examples resoultions">
                       <li class="listHeading">Examples</li>
                       <li>Excerise more</li>
@@ -378,15 +385,18 @@
                       <li>Solo trips</li>
                     </ul>
                   </div>
+                  <div class="col-md-4"></div>
                 </div>
 
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-4"></div>
+                  <div class="col-md-4">
                     <form action="" class="resolutionForm">
                       <input type="text" name="resolution" id="resolution" class="resolution" required placeholder="Enter a resolution...">
                     </form>
                   </div>
-                  <a class="homepage mb-5" href="index.html">Start over</a>
+                  <div class="col-md-4"></div>
+                  <a class="homepage my-3" href="index.html">Start over</a>
                 </div>
               </div>
             </div>
