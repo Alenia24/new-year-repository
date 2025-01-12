@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resolutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Happy+Monkey&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=PT+Mono&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0 auto;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .box h2 {
+        font-family: "Corinthia", serif;
+        font-weight: 400;
+        font-size: 90px;
+        color: #fea0b6;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 90px;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #737373;
+      }
+
+      .box {
+        position: relative;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 120px;
+      }
+
+      .primary-btn {
+        background: #ff4e91;
+        border: 1px solid #ff4e91;
+        color: white;
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 20px 25px;
+        border-radius: 30px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .primary-btn:hover {
+        border: 1px solid #ff4e91;
+        color: #ff4e91;
+      }
+
+      input[type="text"] {
+        background: #ff4e91;
+        color: white;
+        margin: 40px;
+        margin-bottom: 0;
+        font-size: 18px;
+        padding: 10px 25px;
+        border-radius: 30px;
+        border: 1px solid #ff4e91;
+      }
+
+      input[type="text"]::placeholder {
+        color: white;
+      }
+
+      input[type="text"]:focus {
+        outline: #ff4e91;
+      }
+
+      input[type="text"]:focus::placeholder {
+        color: transparent;
+      }
+
+      .box2 {
+        position: relative;
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      .box2 h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: black;
+      }
+
+      .listHeading {
+        list-style-type: none;
+      }
+
+      .examples {
+        font-size: 18px;
+        padding: 30px;
+        width: 50%;
+        margin: auto;
+        text-align: justify;
+        opacity: 0.6;
+      }
+
+      .resolutions {
+        font-size: 18px;
+        padding: 30px;
+        width: 50%;
+        margin: auto;
+        text-align: justify;
+      }
+
+      .homepage {
+        color: #ff4e91;
+        text-decoration: none;
+      }
+
+      .homepage:hover {
+        color: #812045;
+      }
+
+      .confetti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .confetti-piece {
+        position: absolute;
+        width: 8px;
+        height: 16px;
+        background: #ffd300;
+        top: 0;
+        opacity: 0;
+      }
+      .confetti-piece:nth-child(1) {
+        left: 7%;
+        transform: rotate(-79deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 1s;
+        animation-duration: 2s;
+      }
+      .confetti-piece:nth-child(2) {
+        left: 14%;
+        transform: rotate(-42deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 2s;
+        animation-duration: 2.5s;
+      }
+      .confetti-piece:nth-child(3) {
+        left: 21%;
+        transform: rotate(-25deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 3s;
+        animation-duration: 3.5s;
+      }
+      .confetti-piece:nth-child(4) {
+        left: 28%;
+        transform: rotate(-10deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 4s;
+        animation-duration: 3.5s;
+      }
+      .confetti-piece:nth-child(5) {
+        left: 35%;
+        transform: rotate(24deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 5s;
+        animation-duration: 3.5s;
+      }
+      .confetti-piece:nth-child(6) {
+        left: 42%;
+        transform: rotate(-9deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 1s;
+        animation-duration: 2s;
+      }
+      .confetti-piece:nth-child(7) {
+        left: 49%;
+        transform: rotate(-28deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 2s;
+        animation-duration: 2.5s;
+      }
+      .confetti-piece:nth-child(8) {
+        left: 56%;
+        transform: rotate(-49deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 3s;
+        animation-duration: 3.5s;
+      }
+      .confetti-piece:nth-child(9) {
+        left: 63%;
+        transform: rotate(-11deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 4s;
+        animation-duration: 3s;
+      }
+      .confetti-piece:nth-child(10) {
+        left: 70%;
+        transform: rotate(63deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 5s;
+        animation-duration: 3.5s;
+      }
+      .confetti-piece:nth-child(11) {
+        left: 77%;
+        transform: rotate(27deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 1s;
+        animation-duration: 2s;
+      }
+      .confetti-piece:nth-child(12) {
+        left: 84%;
+        transform: rotate(24deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 2s;
+        animation-duration: 2.5s;
+      }
+      .confetti-piece:nth-child(13) {
+        left: 91%;
+        transform: rotate(54deg);
+        animation: makeItRain 5000ms infinite ease-out;
+        animation-delay: 3s;
+        animation-duration: 3s;
+      }
+      .confetti-piece:nth-child(odd) {
+        background: #17d3ff;
+      }
+      .confetti-piece:nth-child(even) {
+        z-index: 1;
+      }
+      .confetti-piece:nth-child(4n) {
+        width: 5px;
+        height: 12px;
+        animation-duration: 5000ms;
+      }
+      .confetti-piece:nth-child(3n) {
+        width: 3px;
+        height: 10px;
+        animation-duration: 5000ms;
+        animation-delay: 2000ms;
+      }
+      .confetti-piece:nth-child(4n-7) {
+        background: #ff4e91;
+      }
+
+      @keyframes makeItRain {
+        from {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        to {
+          transform: translateY(500px);
+        }
+      }
+      .addedResolution {
+        text-transform: capitalize;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="confetti">
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="box">
+        <h2 class="text-center">Happy New Year</h2>
+        <h1 class="text-center">Organize your life</h1>
+        <h3 class="text-center">Resolutions helps build new habits</h3>
+
+        <div class="container">
+          <div class="row d-flex justify-content-center ms-5">
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+              <a class="primary-btn btn" href="">GET STARTED</a>
+            </div>
+
+            <div class="col-md-4">
+              <img
+                class="img-fluid"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/379/original/undraw_celebration_wtm8-removebg-preview.png?1736458069"
+                alt=""
+                width="500px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        This project was coded with 💗 by <a href="">Alenia Allen</a>, is
+        open-sourced on <a href="">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      function addResolution(event) {
+        event.preventDefault();
+        let listElement = document.querySelector(".examples");
+        listElement.innerHTML = "";
+
+        let resolutionElement = document.querySelector(".resolution");
+        let inputResolution = resolutionElement.value;
+
+        let resolutionlistElement = document.querySelector(".resolutions");
+        resolutionlistElement.innerHTML += `
+          <li class="addedResolution">${inputResolution}</li>
+        `;
+
+        resolutionElement.value = "";
+      }
+
+      function resoltionAddPage(event) {
+        event.preventDefault();
+        let boxElement = document.querySelector(".box");
+        boxElement.innerHTML = `
+            <div class="container box2">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="text-center">Let's make habits together</h2>
+                  <div class="resolutions">
+                  </div>
+                </div>
+              </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <ul class="examples resoultions">
+                      <li class="listHeading">Examples</li>
+                      <li>Excerise more</li>
+                      <li>Eat healthier</li>
+                      <li>Read 10 pages a day</li>
+                      <li>Solo trips</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <form action="" class="resolutionForm">
+                      <input type="text" name="resolution" id="resolution" class="resolution" required placeholder="Enter a resolution...">
+                    </form>
+                  </div>
+                  <a class="homepage" href="index.html">Start over</a>
+                </div>
+              </div>
+            </div>
+        `;
+
+        let formElement = document.querySelector(".resolutionForm");
+        formElement.addEventListener("submit", addResolution);
+      }
+
+      let buttonElement = document.querySelector(".primary-btn");
+      buttonElement.addEventListener("click", resoltionAddPage);
+
+      let W = window.innerWidth;
+      let H = window.innerHeight;
+      const canvas = document.getElementById("canvas");
+      const context = canvas.getContext("2d");
+      const maxConfettis = 150;
+      const particles = [];
+
+      const possibleColors = [
+        "DodgerBlue",
+        "OliveDrab",
+        "Gold",
+        "Pink",
+        "SlateBlue",
+        "LightBlue",
+        "Gold",
+        "Violet",
+        "PaleGreen",
+        "SteelBlue",
+        "SandyBrown",
+        "Chocolate",
+        "Crimson",
+      ];
+
+      function randomFromTo(from, to) {
+        return Math.floor(Math.random() * (to - from + 1) + from);
+      }
+
+      function confettiParticle() {
+        this.x = Math.random() * W; // x
+        this.y = Math.random() * H - H; // y
+        this.r = randomFromTo(11, 33); // radius
+        this.d = Math.random() * maxConfettis + 11;
+        this.color =
+          possibleColors[Math.floor(Math.random() * possibleColors.length)];
+        this.tilt = Math.floor(Math.random() * 33) - 11;
+        this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
+        this.tiltAngle = 0;
+
+        this.draw = function () {
+          context.beginPath();
+          context.lineWidth = this.r / 2;
+          context.strokeStyle = this.color;
+          context.moveTo(this.x + this.tilt + this.r / 3, this.y);
+          context.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 5);
+          return context.stroke();
+        };
+      }
+
+      function Draw() {
+        const results = [];
+
+        // Magical recursive functional love
+        requestAnimationFrame(Draw);
+
+        context.clearRect(0, 0, W, window.innerHeight);
+
+        for (var i = 0; i < maxConfettis; i++) {
+          results.push(particles[i].draw());
+        }
+
+        let particle = {};
+        let remainingFlakes = 0;
+        for (var i = 0; i < maxConfettis; i++) {
+          particle = particles[i];
+
+          particle.tiltAngle += particle.tiltAngleIncremental;
+          particle.y += (Math.cos(particle.d) + 3 + particle.r / 2) / 2;
+          particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
+
+          if (particle.y <= H) remainingFlakes++;
+
+          // If a confetti has fluttered out of view,
+          // bring it back to above the viewport and let if re-fall.
+          if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
+            particle.x = Math.random() * W;
+            particle.y = -30;
+            particle.tilt = Math.floor(Math.random() * 10) - 20;
+          }
+        }
+
+        return results;
+      }
+
+      window.addEventListener(
+        "resize",
+        function () {
+          W = window.innerWidth;
+          H = window.innerHeight;
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        },
+        false
+      );
+
+      // Push new confetti objects to `particles[]`
+      for (var i = 0; i < maxConfettis; i++) {
+        particles.push(new confettiParticle());
+      }
+
+      // Initialize
+      canvas.width = W;
+      canvas.height = H;
+      Draw();
+    </script>
+  </body>
+</html>
